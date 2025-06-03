@@ -1,0 +1,110 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #121212;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.car-silhouette {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.car-silhouette img {
+  max-width: 100px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.modelos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .modelos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section {
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #CCCCCC;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #E30613;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #B00510;
+}
+
+#resultados {
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
+}
