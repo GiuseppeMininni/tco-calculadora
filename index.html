@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora TCO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Audi_logo_detail.svg" alt="Audi Logo">
+    </div>
+    <h1>Calculadora de Ahorro TCO</h1>
+    <form id="tcoForm">
+      <div class="modelos">
+        <div class="section">
+          <div class="car-silhouette">
+            <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/car-310648_960_720.png" alt="Silueta coche Audi">
+          </div>
+          <h2>Modelo 1</h2>
+          <label for="modelo1">Modelo:</label>
+          <select id="modelo1" required>
+            <option value="">Seleccione un modelo</option>
+            <option value="A3">Audi A3</option>
+            <option value="A4">Audi A4</option>
+            <option value="Q5">Audi Q5</option>
+          </select>
+          <label for="acabado1">Acabado:</label>
+          <input type="text" id="acabado1" required>
+          <label for="motor1">Motor:</label>
+          <input type="text" id="motor1" required>
+          <label for="cuota1">Cuota mensual (€/mes):</label>
+          <input type="number" id="cuota1" required>
+        </div>
+
+        <div class="section">
+          <div class="car-silhouette">
+            <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/car-310648_960_720.png" alt="Silueta coche Audi">
+          </div>
+          <h2>Modelo 2</h2>
+          <label for="modelo2">Modelo:</label>
+          <select id="modelo2" required>
+            <option value="">Seleccione un modelo</option>
+            <option value="A3">Audi A3</option>
+            <option value="A4">Audi A4</option>
+            <option value="Q5">Audi Q5</option>
+          </select>
+          <label for="acabado2">Acabado:</label>
+          <input type="text" id="acabado2" required>
+          <label for="motor2">Motor:</label>
+          <input type="text" id="motor2" required>
+          <label for="cuota2">Cuota mensual (€/mes):</label>
+          <input type="number" id="cuota2" required>
+        </div>
+      </div>
+
+      <div class="section">
+        <label for="kmsSemana">Kilómetros por semana:</label>
+        <input type="number" id="kmsSemana" required>
+
+        <label for="cargasSemana">Cargas por semana:</label>
+        <input type="number" id="cargasSemana" required>
+
+        <label for="cargasGratis">Cargas gratis por semana:</label>
+        <input type="number" id="cargasGratis" required>
+
+        <label for="precioCombustible">Precio combustible (€/l):</label>
+        <input type="number" step="0.01" id="precioCombustible" required>
+
+        <label for="precioKwh">Precio kWh (€/kWh):</label>
+        <input type="number" step="0.01" id="precioKwh" required>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Calcular</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <div id="resultados" class="hidden">
+      <h2>Resultados</h2>
+      <p id="resultadoTexto"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
